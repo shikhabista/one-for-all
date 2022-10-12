@@ -7,6 +7,9 @@ import solidJs from "@astrojs/solid-js";
 import react from "@astrojs/react";
 
 // https://astro.build/config
+import svelte from "@astrojs/svelte";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [solidJs(), react()]
+  integrations: [solidJs(), react(), svelte()]
 });
