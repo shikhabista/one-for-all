@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+import TodoSolid from "../components/Todo.jsx";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1>One for <span class="text-gradient">All</span></h1>
+		<div class="showcase">
+			<TodoSolid client:load />
+		</div>
+	</main>
+</Layout>
+
+<style>
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+		text-align: center;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>
+
+<style is:global>
+	.showcase {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 10px;
+		width: 90%;
+		margin: auto;
+	}
+
+	@media screen and (max-width:720px) {
+		.showcase {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
