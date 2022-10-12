@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import TodoSolid from "../components/Todo.jsx";
+import TodoSolid from "../components/Todo";
+import TodoReact from '../components/TodoReact';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -8,6 +9,7 @@ import TodoSolid from "../components/Todo.jsx";
 		<h1>One for <span class="text-gradient">All</span></h1>
 		<div class="showcase">
 			<TodoSolid client:load />
+			<TodoReact client:load />
 		</div>
 	</main>
 </Layout>
