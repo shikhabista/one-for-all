@@ -11,17 +11,17 @@ export default function TodoReact() {
         ]);
         setItem("");
     };
-    return <div class="card">
-        <div class="card-header">
+    return <div className="card">
+        <div className="card-header">
             <h5 className="card-title">
                 ReactJS
             </h5>
             <form action="" onSubmit={onSubmit}>
-                <input type="text" class="input" value={item} onChange={(e) => setItem(e.target.value)} />
+                <input type="text" className="input" value={item} onChange={(e) => setItem(e.target.value)} />
             </form>
         </div>
         <ul>
-            {items.map(singleItem => (<li class='todo-item'>{singleItem}</li>))}
+            {items.map(singleItem => (<li className='todo-item'>{singleItem}</li>))}
         </ul>
     </div>;
 }
