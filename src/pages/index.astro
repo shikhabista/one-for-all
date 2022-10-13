@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import TodoSolid from "../components/Todo";
 import TodoReact from '../components/TodoReact';
 import TodoSvelte from '../components/Todo.svelte';
+import TodoVue from '../components/Todo.vue';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,6 +13,7 @@ import TodoSvelte from '../components/Todo.svelte';
 			<TodoSolid client:load />
 			<TodoReact client:load />
             <TodoSvelte client:load/>
+            <TodoVue client:load/>
 		</div>
 	</main>
 </Layout>
