@@ -4,6 +4,7 @@ import TodoSolid from "../components/Todo";
 import TodoReact from '../components/TodoReact';
 import TodoSvelte from '../components/Todo.svelte';
 import TodoVue from '../components/Todo.vue';
+import TodoPreact from '../components/TodoPreact.tsx';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -14,6 +15,7 @@ import TodoVue from '../components/Todo.vue';
 			<TodoReact client:load />
             <TodoSvelte client:load/>
             <TodoVue client:load/>
+            <TodoPreact client:load/>
 		</div>
 	</main>
 </Layout>
