@@ -13,6 +13,9 @@ import svelte from "@astrojs/svelte";
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
+import preact from "@astrojs/preact";
+
+// https://astro.build/config
 export default defineConfig({
-  integrations: [solidJs(), react(), svelte(), vue()]
+  integrations: [solidJs(), react(), svelte(), vue(), preact()]
 });
